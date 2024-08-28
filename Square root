@@ -1,0 +1,15 @@
+import math
+
+def find_square_root(number):
+    if number < 0:
+        return "Cannot compute the square root of a negative number"
+    else:
+        return math.sqrt(number)
+
+# Input from the user
+try:
+    num = float(input("Enter a number to find its square root: "))
+    result = find_square_root(num)
+    print(f"The square root of {num} is: {result}")
+except ValueError:
+    print("Please enter a valid number.")
